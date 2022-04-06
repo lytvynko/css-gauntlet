@@ -1,1 +1,29 @@
 /* Add your custom styles here. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.open-squares {
+  background-color: #fff;
+  border: 1px solid #C39F76;
+  height: 280px;
+  width: 280px;
+  position: relative;
+}
+.sq {
+  width: 130px;
+  height: 105px;
+  border: 30px solid #C39F76;
+  position: absolute;
+}
+.top {
+  top: 70px;
+  left: 55px;
+  border-right: none;
+}
+.bottom {
+  bottom: 65px;
+  right: 55px;
+  border-left: none;
+}
