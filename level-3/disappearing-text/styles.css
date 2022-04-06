@@ -26,7 +26,7 @@ h1 span {
   display: inline-block;
   position: relative;
 }
-h1 span:after {
+h1 span::after {
   content: '';
   background-color: #fff;
   position: absolute;

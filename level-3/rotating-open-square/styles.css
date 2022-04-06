@@ -1,1 +1,42 @@
 /* Add your custom styles here. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.frame {
+  background-color: #fff;
+  border: 1px solid #C39F76;
+  height: 280px;
+  width: 280px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.square {
+  width: 140px;
+  height: 140px;
+  border: 20px solid #C39F76;
+  position: relative;
+}
+.square::after {
+  content: '';
+  position: absolute; 
+  width: 40px;
+  height: 100px;
+  bottom: 50px;
+  left: calc(50% - 20px);
+  background-color: #fff;
+  animation: rotate 3s infinite;
+  animation-timing-function: linear;
+  transform-origin: bottom;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
