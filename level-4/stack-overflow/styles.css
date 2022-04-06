@@ -1,1 +1,54 @@
 /* Add your custom styles here. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.frame {
+  background-color: #fff;
+  border: 1px solid;
+  color: #C39F76;
+  height: 280px;
+  width: 280px;
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.base {
+  position: relative;
+  width: 180px;
+  height: 80px;
+  border: 20px solid #BBBBBB;
+  border-top: none;
+  margin-bottom: 50px;
+}
+.item {
+  width: 95px;
+  height: 20px;
+  background-color: #F08127;
+  position: absolute;
+  bottom: 15px;
+  right: 22px;
+  transform-origin: bottom;
+}
+.item_13deg {
+  margin-bottom: 35px;
+  transform: rotate(13deg);
+  right: 21px;
+}
+.item_26deg {
+  margin-bottom: 69px;
+  transform: rotate(26deg);
+  right: 11px;
+}
+.item_39deg {
+  margin-bottom: 100px;
+  transform: rotate(39deg);
+  right: -7px;
+}
+.item_53deg {
+  margin-bottom: 126px;
+  transform: rotate(53deg);
+  right: -32px;
+}
