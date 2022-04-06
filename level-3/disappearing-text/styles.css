@@ -1,1 +1,84 @@
 /* Add your custom styles here. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.frame {
+  background-color: #fff;
+  border: 1px solid #C39F76;
+  height: 280px;
+  width: 280px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  overflow: hidden;
+}
+h1 {
+  font-family: monospace, sans-serif; 
+}
+h1 span {
+  height: 30px;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+}
+h1 span:after {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  top: -23px;
+  left: 0;
+}
+.frame:hover h1 span:nth-child(1)::after {
+  animation: disappear .5s forwards;
+}
+.frame:hover h1 span:nth-child(2)::after {
+  animation: disappear .5s forwards;
+  animation-delay: .5s;
+}
+.frame:hover h1 span:nth-child(3)::after {
+  animation: disappear .5s forwards;
+  animation-delay: 1s;
+}
+.frame:hover h1 span:nth-child(4)::after {
+  animation: disappear .5s forwards;
+  animation-delay: 1.5s;
+}
+.frame:hover h1 span:nth-child(5)::after {
+  animation: disappear .5s forwards;
+  animation-delay: 2s;
+}
+.frame:hover h1 span:nth-child(6)::after {
+  animation: disappear .5s forwards;
+  animation-delay: 2.5s;
+}
+.frame:hover h1 span:nth-child(7)::after {
+  animation: disappear .5s forwards;
+  animation-delay: 3s;
+}
+.frame:hover h1 span:nth-child(8)::after {
+  animation: disappear .5s forwards;
+  animation-delay: 3.5s;
+}
+.frame:hover h1 span:nth-child(9)::after {
+  animation: disappear .5s forwards;
+  animation-delay: 4s;
+}
+.frame:hover h1 span:nth-child(10)::after {
+  animation: disappear .5s forwards;
+  animation-delay: 4.5s;
+}
+@keyframes disappear {
+  from {
+    top: -23px;
+  }
+  to {
+    top: 0;
+  }
+}
