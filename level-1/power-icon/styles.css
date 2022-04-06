@@ -1,1 +1,42 @@
 /* Add your custom styles here. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.power-icon {
+  background-color: #fff;
+  border: 1px solid #C39F76;
+  height: 280px;
+  width: 280px;
+  position: relative;
+}
+.circle {
+  width: 140px;
+  height: 140px;
+  border: 20px solid #C39F76;
+  position: absolute;
+  border-radius: 70px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.power-wrap {
+  background-color: #fff;
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+.power {
+  width: 20px;
+  height: 85px;
+  border-radius: 10px;
+  background-color: #C39F76;
+  padding: 0 10px;
+  margin-left: 10px;
+  
+  
+ 
+}
