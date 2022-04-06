@@ -1,1 +1,89 @@
 /* Add your custom styles here. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.frame {
+  background-color: #fff;
+  border: 1px solid;
+  color: #C39F76;
+  height: 280px;
+  width: 280px;
+  position: relative;
+}
+.cog {
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  width: 90px;
+  height: 90px;
+  animation: rotate 3s infinite;
+}
+.cog_second {
+  top: 111px;
+  left: 62px;
+  transform: rotate(29deg);
+  animation: rotateCounter 3s infinite;
+}
+.cog, .cog_second {
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+.wheel {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #C39F76;
+}
+.wheel::before{
+  display: block;
+  content: '';
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 20;
+}
+.column, .column::before, .column::after {
+  position: absolute;
+  width: 110px;
+  height: 24px;
+  background-color: #C39F76;
+  z-index: 10;
+}
+.column {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.column::before, .column::after {
+  content: '';
+}
+.column::before {
+  transform: rotate(120deg);
+}
+.column::after {
+  transform: rotate(240deg);
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(340deg);
+  }
+}
+@keyframes rotateCounter {
+  from {
+    transform: rotate(29deg);
+  }
+  to {
+    transform: rotate(-311deg);
+  }
+}
