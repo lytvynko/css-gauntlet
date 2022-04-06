@@ -1,1 +1,25 @@
 /* Add your custom styles here. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.frame {
+  background-color: #fff;
+  border: 1px solid #C39F76;
+  height: 280px;
+  width: 280px;
+  position: relative;
+}
+.circles, .circles:before {
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, transparent 35px, #C39F76 40px, transparent 44px);
+  background-size: 80px 80px;
+  position: absolute;
+  background-position: -30% -30%;
+}
+.circles:before {
+  content: '';
+  background-position: 30% 30%;
+}
