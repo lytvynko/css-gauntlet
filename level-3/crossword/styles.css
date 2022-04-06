@@ -1,1 +1,31 @@
 /* Add your custom styles here. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.frame {
+  background-color: #fff;
+  border: 1px solid #C39F76;
+  height: 280px;
+  width: 280px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+td {
+  border: 1px solid #2F2F2F;
+  padding: 5px;
+  font-size: 17px;
+  min-width: 31px;
+  min-height: 31px;
+  text-align: center;
+}
+[colspan] {
+  border: none;
+}
